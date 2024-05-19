@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/text_stats_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Статистика"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/text_total_riddles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Полученные загадки: 10"
+        android:layout_below="@id/text_stats_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/text_correct_answers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Правильные ответы: 5"
+        android:layout_below="@id/text_total_riddles"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/text_incorrect_answers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Неправильные ответы: 5"
+        android:layout_below="@id/text_correct_answers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Главная"
+        android:layout_below="@id/text_incorrect_answers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/btn_new_session"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Новая сессия"
+        android:layout_below="@id/btn_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>
